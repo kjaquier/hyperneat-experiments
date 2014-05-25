@@ -5,7 +5,9 @@ This repository contains a copy of SharpNEAT 2 with a few classification and clu
 
 The experiments are in a separate project named `SharpNeatExperiments`, which contains :
 
-* In the `Classification` folder, all the classification experiments. 
+* In the `Classification` folder, all the classification experiments.
+   * `Iris`, `PIMA` and `Voices` are using datasets without geometrical representations of the inputs.
+   * `OCR` is an Optical Character Recognition experiment with a 2D matrix of pixels for each sample, thus letting HyperNEAT take advantage of each pixel's position.
 * In the `Clustering` folder, all the clustering experiments.
     * `Old` contains the first attempts to do clustering with HyperNEAT. It doesn't work and has not been updated. It can just be ignored.
     * `MapClustering` is the clustering experiment with geolocated data. `ColombiaExperimentHyperNeat` is an instance of this experiment using rescaled data of some area of Colombia.
