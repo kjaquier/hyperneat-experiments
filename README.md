@@ -13,9 +13,9 @@ The experiments are in a separate project named `SharpNeatExperiments`, which co
    * `OCR` is an Optical Character Recognition experiment with a 2D matrix of pixels for each sample, thus letting HyperNEAT take advantage of each pixel's position. Apart from the positions of the input neurons, it has the same settings as the other classification experiments.
 * In the `Clustering` folder, all the clustering experiments :
     * `Old` contains the first attempts to do clustering with HyperNEAT. It doesn't work and has not been updated. It can just be ignored.
-    * `MapClustering` is a soft-clustering experiment (with fixed number of clusters) using geolocated data. `ColombiaExperimentHyperNeat` is an instance of this experiment based on rescaled data of some area of Colombia. ([More details](https://github.com/kjaquier/hyperneat-experiments/blob/master/README.md#more-details-on-mapclustering-and-windowmapclustering))
-    * `WindowMapClustering` is the same experiment with a different network topology. ([More details](https://github.com/kjaquier/hyperneat-experiments/blob/master/README.md#more-details-on-mapclustering-and-windowmapclustering))
-
+    * `MapClustering` is a soft-clustering experiment (with fixed number of clusters) using geolocated data. `ColombiaExperimentHyperNeat` is an instance of this experiment based on rescaled data of some area of Colombia. (More details below)
+    * `WindowMapClustering` is the same experiment with a different network topology. (More details below)
+    
 More details on MapClustering and WindowMapClustering
 -------
 
