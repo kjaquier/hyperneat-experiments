@@ -1,7 +1,7 @@
 HyperNEAT experiments
 =====================
 
-This repository contains a copy of SharpNEAT 2 with a few classification and clustering experiments.
+This repository contains a copy of [SharpNEAT 2.2](http://sharpneat.sourceforge.net/) with a few classification and clustering experiments.
 
 The experiments are in a separate project named `SharpNeatExperiments`, which contains :
 
