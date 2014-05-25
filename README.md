@@ -15,6 +15,4 @@ The experiments are in a separate project named `SharpNeatExperiments`, which co
 
 Domain views are available for most experiments.
 
-All experiments has an overridable `Phenotype` property which makes it easy to switch between NEAT and HyperNEAT (despite not being very elegant).
-
 Note that this is prototyping code which clearly needs some refactorisation. I tried to keep it as understandable as possible, though.
