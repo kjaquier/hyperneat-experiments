@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Experiments>
+
+  <Experiment name="Voices (HyperNEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Classification.Voices.VoicesExperimentHyperNeat</ClassName>
+    <Config>
+      <PopulationSize>200</PopulationSize>
+      <SpecieCount>10</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+      </Activation>
+      <AddNodeMutationProbability>0.001</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.01</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.001</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>true</LengthCppnInput>
+      <ConnectionWeightRange>0.5</ConnectionWeightRange>
+      <InitialInterconnectionsProportion>0.5</InitialInterconnectionsProportion>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="Voices (NEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Classification.Voices.VoicesExperimentNeat</ClassName>
+    <Config>
+      <PopulationSize>200</PopulationSize>
+      <SpecieCount>10</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+      </Activation>
+      <AddNodeMutationProbability>0.001</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.01</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.001</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>true</LengthCppnInput>
+      <ConnectionWeightRange>0.5</ConnectionWeightRange>
+      <InitialInterconnectionsProportion>0.5</InitialInterconnectionsProportion>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="PIMA (HyperNEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Classification.PIMA.PIMAExperimentHyperNeat</ClassName>
+    <Config>
+      <PopulationSize>200</PopulationSize>
+      <SpecieCount>5</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+      <AddNodeMutationProbability>0.001</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.01</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.001</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>0.5</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="PIMA (NEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Classification.PIMA.PIMAExperimentNeat</ClassName>
+    <Config>
+      <PopulationSize>200</PopulationSize>
+      <SpecieCount>5</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+      <AddNodeMutationProbability>0.001</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.01</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.001</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>0.5</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="Iris (HyperNEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Classification.Iris.IrisExperimentHyperNeat</ClassName>
+    <Config>
+      <PopulationSize>200</PopulationSize>
+      <SpecieCount>15</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+      <AddNodeMutationProbability>0.001</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.01</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.001</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>0.001</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="Iris (NEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Classification.Iris.IrisExperimentNeat</ClassName>
+    <Config>
+      <PopulationSize>200</PopulationSize>
+      <SpecieCount>15</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+      <AddNodeMutationProbability>0.001</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.01</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.001</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>0.001</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="OCR classification (HyperNEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Classification.OCR.OCRClassificationExperimentHyperNeat</ClassName>
+    <Config>
+      <PopulationSize>200</PopulationSize>
+      <SpecieCount>10</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+      <AddNodeMutationProbability>0.001</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.01</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.001</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>0.5</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="OCR classification (NEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Classification.OCR.OCRClassificationExperimentNeat</ClassName>
+    <Config>
+      <PopulationSize>200</PopulationSize>
+      <SpecieCount>10</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+      <AddNodeMutationProbability>0.001</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.01</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.001</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>0.5</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="Iris clustering (HyperNEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Clustering.Iris.IrisExperimentHyperNeat</ClassName>
+    <Config>
+      <PopulationSize>1000</PopulationSize>
+      <SpecieCount>40</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+      <AddNodeMutationProbability>0.1</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.1</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.01</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>0.1</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="Iris clustering (NEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Clustering.Iris.IrisExperimentNeat</ClassName>
+    <Config>
+      <PopulationSize>1000</PopulationSize>
+      <SpecieCount>40</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>Acyclic</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+      <AddNodeMutationProbability>0.1</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.1</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.01</DeleteConnectionMutationProbability>
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>0.1</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="Colombia clustering (HyperNEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Clustering.Colombia.ColombiaExperimentHyperNeat</ClassName>
+    <Config>
+      <PopulationSize>300</PopulationSize>
+      <SpecieCount>15</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>CyclicFixedIters</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+
+      <AddNodeMutationProbability>0.1</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.1</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.01</DeleteConnectionMutationProbability>
+      
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>1.0</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="Colombia clustering (with window) (HyperNEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Clustering.Colombia.WindowColombiaExperimentHyperNeat</ClassName>
+    <Config>
+      <PopulationSize>300</PopulationSize>
+      <SpecieCount>15</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>CyclicFixedIters</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+
+      <AddNodeMutationProbability>0.1</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.1</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.01</DeleteConnectionMutationProbability>
+
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>1.0</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+  <Experiment name="Colombia clustering (with window) (NEAT)">
+    <AssemblyPath>SharpNeatExperiments.dll</AssemblyPath>
+    <ClassName>SharpNeat.Experiments.Clustering.Colombia.WindowColombiaExperimentNeat</ClassName>
+    <Config>
+      <PopulationSize>300</PopulationSize>
+      <SpecieCount>15</SpecieCount>
+      <ActivationCppn>
+        <Scheme>Acyclic</Scheme>
+      </ActivationCppn>
+      <Activation>
+        <Scheme>CyclicFixedIters</Scheme>
+        <Iters>1</Iters>
+      </Activation>
+
+      <AddNodeMutationProbability>0.1</AddNodeMutationProbability>
+      <AddConnectionMutationProbability>0.1</AddConnectionMutationProbability>
+      <DeleteConnectionMutationProbability>0.01</DeleteConnectionMutationProbability>
+
+      <ComplexityRegulationStrategy>Relative</ComplexityRegulationStrategy>
+      <ComplexityThreshold>10</ComplexityThreshold>
+      <LengthCppnInput>false</LengthCppnInput>
+      <InitialInterconnectionsProportion>1.0</InitialInterconnectionsProportion>
+      <ConnectionWeightRange>5</ConnectionWeightRange>
+      <Description>
+      </Description>
+    </Config>
+  </Experiment>
+
+</Experiments>

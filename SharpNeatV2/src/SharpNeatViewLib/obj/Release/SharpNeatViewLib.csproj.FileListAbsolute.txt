@@ -1,0 +1,13 @@
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\bin\Release\SharpNeatViewLib.XML
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\bin\Release\SharpNeatViewLib.dll
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\bin\Release\SharpNeatViewLib.pdb
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\bin\Release\SharpNeatLib.dll
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\bin\Release\log4net.dll
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\bin\Release\SharpNeatLib.pdb
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\bin\Release\SharpNeatLib.xml
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\bin\Release\log4net.xml
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\obj\Release\SharpNeatViewLib.csprojResolveAssemblyReference.cache
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\obj\Release\SharpNeat.View.GraphControl.resources
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\obj\Release\SharpNeatViewLib.csproj.GenerateResource.Cache
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\obj\Release\SharpNeatViewLib.dll
+D:\Workspace\hyperneat-experiments\SharpNeatV2\src\SharpNeatViewLib\obj\Release\SharpNeatViewLib.pdb

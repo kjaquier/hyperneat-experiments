@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17E0FF78-FAED-4208-AD7A-70456AFFD558}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpNeat.Experiments</RootNamespace>
+    <AssemblyName>SharpNeatExperiments</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Datasets\dataset_natural_adults.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Datasets\iris.data">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Datasets\letter.samples.data">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Datasets\PIMA.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Datasets\semeion.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Datasets\semeion.data">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Datasets\semeion.samples.data">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Datasets\dataset_natural_adults.txt" />
+    <Content Include="Datasets\colombia_tmax_20x15.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datasets\colombia_tmean_10x8.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datasets\colombia_tmean_40x30.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datasets\dataset_natural_artificial_adults.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datasets\tmean_10x8_2var_norm.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datasets\tmean_7x6_2var.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExperimentsParams.experiments.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classification\ClassificationDataset.cs" />
+    <Compile Include="Classification\ClassificationEvaluator.cs" />
+    <Compile Include="Classification\ClassificationExperimentHyperNeat.cs" />
+    <Compile Include="Classification\IClassificationDataset.cs" />
+    <Compile Include="Classification\Iris\IrisExperimentNeat.cs" />
+    <Compile Include="Classification\Iris\IrisExperimentHyperNeat.cs" />
+    <Compile Include="Classification\OCR\OCRClassificationExperimentNeat.cs" />
+    <Compile Include="Classification\OCR\OCRClassificationExperimentHyperNeat.cs" />
+    <Compile Include="Classification\OCR\OCRClassificationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classification\OCR\OCRClassificationView.Designer.cs">
+      <DependentUpon>OCRClassificationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classification\PIMA\PIMAExperimentNeat.cs" />
+    <Compile Include="Classification\PIMA\PIMAExperimentHyperNeat.cs" />
+    <Compile Include="Classification\Voices\VoicesExperimentNeat.cs" />
+    <Compile Include="Classification\Voices\VoicesExperimentHyperNeat.cs" />
+    <Compile Include="Clustering\Colombia\WindowColombiaExperimentNeat.cs" />
+    <Compile Include="Clustering\Iris\IrisExperimentNeat.cs" />
+    <Compile Include="Clustering\Old\ClusteringDataset.cs" />
+    <Compile Include="Clustering\Old\ClusteringEvaluator.cs" />
+    <Compile Include="Clustering\Old\ClusteringExperimentHyperNeat.cs" />
+    <Compile Include="Clustering\Colombia\ColombiaExperimentHyperNeat.cs" />
+    <Compile Include="Clustering\Colombia\WindowColombiaExperimentHyperNeat.cs" />
+    <Compile Include="Clustering\Old\IClusteringDataset.cs" />
+    <Compile Include="Clustering\MapClustering\IMapClusteringDataset.cs" />
+    <Compile Include="Clustering\Iris\IrisExperimentHyperNeat.cs" />
+    <Compile Include="Clustering\MapClustering\MapClusteringDataset.cs" />
+    <Compile Include="Clustering\MapClustering\MapClusteringEvaluator.cs" />
+    <Compile Include="Clustering\MapClustering\MapClusteringExperimentHyperNeat.cs" />
+    <Compile Include="Clustering\MapClustering\MapClusteringScatterPlotView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clustering\MapClustering\MapClusteringScatterPlotView.Designer.cs">
+      <DependentUpon>MapClusteringScatterPlotView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clustering\MapClustering\MapClusteringView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clustering\MapClustering\MapClusteringView.Designer.cs">
+      <DependentUpon>MapClusteringView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clustering\WindowMapClustering\WindowMapClusteringEvaluator.cs" />
+    <Compile Include="Clustering\WindowMapClustering\WindowMapClusteringExperimentHyperNeat.cs" />
+    <Compile Include="Clustering\WindowMapClustering\WindowMapClusteringView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clustering\WindowMapClustering\WindowMapClusteringView.Designer.cs">
+      <DependentUpon>WindowMapClusteringView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Algorithms.cs" />
+    <Compile Include="Common\BitmapView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\EasyCSV.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Common\IDataset.cs" />
+    <Compile Include="Common\IViewableEvaluator.cs" />
+    <Compile Include="Common\MultiBitmapView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\MultiBitmapView.Designer.cs">
+      <DependentUpon>MultiBitmapView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\QuickExperimentHyperNeat.cs" />
+    <Compile Include="Common\ScatterPlotView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\ScatterPlotView.Designer.cs">
+      <DependentUpon>ScatterPlotView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Clustering\MapClustering\MapClusteringScatterPlotView.resx">
+      <DependentUpon>MapClusteringScatterPlotView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clustering\MapClustering\MapClusteringView.resx">
+      <DependentUpon>MapClusteringView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clustering\WindowMapClustering\WindowMapClusteringView.resx">
+      <DependentUpon>WindowMapClusteringView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MultiBitmapView.resx">
+      <DependentUpon>MultiBitmapView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ScatterPlotView.resx">
+      <DependentUpon>ScatterPlotView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpNeatDomainsExtra\SharpNeatDomainsExtra.csproj">
+      <Project>{3a1b9dec-aece-42f3-bad9-9172482c43ab}</Project>
+      <Name>SharpNeatDomainsExtra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpNeatDomains\SharpNeatDomains.csproj">
+      <Project>{73ab8c8c-6315-4dc7-a3de-3c747f86ac78}</Project>
+      <Name>SharpNeatDomains</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpNeatLib\SharpNeatLib.csproj">
+      <Project>{abc5c77a-deba-420c-926c-bd3e6f37ae15}</Project>
+      <Name>SharpNeatLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Box2DX">
+      <HintPath>.\Box2DX.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>.\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>.\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics.IO">
+      <HintPath>.\MathNet.Numerics.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Tao.OpenGl">
+      <HintPath>.\Tao.OpenGl.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Platform.Windows">
+      <HintPath>.\Tao.Platform.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZedGraph">
+      <HintPath>.\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
