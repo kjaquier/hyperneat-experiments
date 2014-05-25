@@ -13,6 +13,8 @@ The experiments are in a separate project named `SharpNeatExperiments`, which co
     * `MapClustering` is the clustering experiment with geolocated data. `ColombiaExperimentHyperNeat` is an instance of this experiment using rescaled data of some area of Colombia.
     * `WindowMapClustering` is the same experiment with a different network topology. Instead of passing all samples as input, networks are activated with one sample at a time, with a window (comparable to a filter in image processing) that defines which neighboring samples to pass with it. This way, the number of inputs and outputs is reduced, thus giving the possibility to compare performances with NEAT and to try setting a hidden layer. But with HyperNEAT, we can't take advantage of the samples' position in the hole area anymore.
 
+Domain views are available for most experiments.
+
 All experiments has an overridable `Phenotype` property which makes it easy to switch between NEAT and HyperNEAT (despite not being very elegant).
 
 Note that this is prototyping code which clearly needs some refactorisation. I tried to keep it as understandable as possible, though.
