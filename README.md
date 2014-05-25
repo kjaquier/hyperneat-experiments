@@ -1,7 +1,10 @@
 HyperNEAT experiments
 =====================
 
-This repository contains a copy of SharpNEAT 2 with a few classification and clustering experiments.
+Content
+-------
+
+This repository contains a copy of [SharpNEAT 2.2](http://sharpneat.sourceforge.net/) with a few classification and clustering experiments.
 
 The experiments are in a separate project named `SharpNeatExperiments`, which contains :
 
@@ -13,6 +16,9 @@ The experiments are in a separate project named `SharpNeatExperiments`, which co
     * `MapClustering` is the clustering experiment with geolocated data. `ColombiaExperimentHyperNeat` is an instance of this experiment using rescaled data of some area of Colombia.
     * `WindowMapClustering` is the same experiment with a different network topology. Instead of passing all samples as input, networks are activated with one sample at a time, with a window (comparable to a filter in image processing) that defines which neighboring samples to pass with it. This way, the number of inputs and outputs is reduced, thus giving the possibility to compare performances with NEAT and to try setting a hidden layer. But with HyperNEAT, we can't take advantage of the samples' position in the hole area anymore.
 
-Domain views are available for most experiments.
+Remarks
+-------
 
-Note that this is prototyping code which clearly needs some refactorisation. I tried to keep it as understandable as possible, though.
+* Domain views are available for most experiments.
+* Compared to the original source code of SharpNEAT, the `SharpNeat.Domains.XmlUtils` class has been modified.
+* This is prototyping code which clearly needs some refactorisation. I tried to keep it as understandable as possible, though.
